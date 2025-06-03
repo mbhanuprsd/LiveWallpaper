@@ -27,7 +27,7 @@
         android:background="#CCCCCC"
         android:gravity="center"
         android:textStyle="bold"
-        android:text="#RRGGBB"
+        android:text="@string/color_picker"
         android:textColor="@android:color/white"
         android:layout_marginBottom="8dp"/>
 

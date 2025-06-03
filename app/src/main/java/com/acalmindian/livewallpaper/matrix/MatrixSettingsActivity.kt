@@ -11,6 +11,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.acalmindian.livewallpaper.R
+import androidx.core.graphics.toColorInt
 
 class MatrixSettingsActivity : AppCompatActivity() {
 
@@ -98,24 +99,24 @@ class MatrixSettingsActivity : AppCompatActivity() {
     private fun updateColorDisplays() {
         // Update bright color display
         try {
-            brightColorDisplay.setBackgroundColor(Color.parseColor(currentBrightColorHex))
+            brightColorDisplay.setBackgroundColor(currentBrightColorHex.toColorInt())
             brightColorDisplay.text = currentBrightColorHex
-            brightColorDisplay.setTextColor(getContrastColor(Color.parseColor(currentBrightColorHex))) // Set text color for contrast
+            brightColorDisplay.setTextColor(getContrastColor(currentBrightColorHex.toColorInt())) // Set text color for contrast
         } catch (e: IllegalArgumentException) {
-            brightColorDisplay.setBackgroundColor(Color.parseColor(DEFAULT_BRIGHT_COLOR))
+            brightColorDisplay.setBackgroundColor(DEFAULT_BRIGHT_COLOR.toColorInt())
             brightColorDisplay.text = DEFAULT_BRIGHT_COLOR
-            brightColorDisplay.setTextColor(getContrastColor(Color.parseColor(DEFAULT_BRIGHT_COLOR)))
+            brightColorDisplay.setTextColor(getContrastColor(DEFAULT_BRIGHT_COLOR.toColorInt()))
         }
 
         // Update dark color display
         try {
-            darkColorDisplay.setBackgroundColor(Color.parseColor(currentDarkColorHex))
+            darkColorDisplay.setBackgroundColor(currentDarkColorHex.toColorInt())
             darkColorDisplay.text = currentDarkColorHex
-            darkColorDisplay.setTextColor(getContrastColor(Color.parseColor(currentDarkColorHex))) // Set text color for contrast
+            darkColorDisplay.setTextColor(getContrastColor(currentDarkColorHex.toColorInt())) // Set text color for contrast
         } catch (e: IllegalArgumentException) {
-            darkColorDisplay.setBackgroundColor(Color.parseColor(DEFAULT_DARK_COLOR))
+            darkColorDisplay.setBackgroundColor(DEFAULT_DARK_COLOR.toColorInt())
             darkColorDisplay.text = DEFAULT_DARK_COLOR
-            darkColorDisplay.setTextColor(getContrastColor(Color.parseColor(DEFAULT_DARK_COLOR)))
+            darkColorDisplay.setTextColor(getContrastColor(DEFAULT_DARK_COLOR.toColorInt()))
         }
     }
 
@@ -172,13 +173,13 @@ class MatrixSettingsActivity : AppCompatActivity() {
 
     private fun updatePreviewColor(hex: String, previewTextView: TextView) {
         try {
-            val color = Color.parseColor(hex)
+            val color = hex.toColorInt()
             previewTextView.setBackgroundColor(color)
             previewTextView.text = hex
             previewTextView.setTextColor(getContrastColor(color))
-        } catch (e: IllegalArgumentException) {
+        } catch (e: Exception) {
             previewTextView.setBackgroundColor(Color.GRAY) // Indicate invalid input
-            previewTextView.text = "Invalid"
+            previewTextView.text = getString(R.string.invalid)
             previewTextView.setTextColor(Color.WHITE)
         }
     }

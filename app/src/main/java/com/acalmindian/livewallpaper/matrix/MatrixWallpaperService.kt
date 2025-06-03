@@ -7,6 +7,7 @@ import android.os.Handler
 import android.os.Looper // Import Looper
 import android.service.wallpaper.WallpaperService
 import android.view.SurfaceHolder
+import androidx.core.graphics.toColorInt
 
 class MatrixWallpaperService : WallpaperService() {
 
@@ -99,10 +100,12 @@ class MatrixWallpaperService : WallpaperService() {
             val brightColorHex = sharedPreferences.getString(MatrixSettingsActivity.KEY_BRIGHT_COLOR, MatrixSettingsActivity.DEFAULT_BRIGHT_COLOR) ?: MatrixSettingsActivity.DEFAULT_BRIGHT_COLOR
             val darkColorHex = sharedPreferences.getString(MatrixSettingsActivity.KEY_DARK_COLOR, MatrixSettingsActivity.DEFAULT_DARK_COLOR) ?: MatrixSettingsActivity.DEFAULT_DARK_COLOR
 
-            val brightColor = try { Color.parseColor(brightColorHex) } catch (e: IllegalArgumentException) { Color.parseColor(
-                MatrixSettingsActivity.DEFAULT_BRIGHT_COLOR) }
-            val darkColor = try { Color.parseColor(darkColorHex) } catch (e: IllegalArgumentException) { Color.parseColor(
-                MatrixSettingsActivity.DEFAULT_DARK_COLOR) }
+            val brightColor = try {
+                brightColorHex.toColorInt() } catch (e: IllegalArgumentException) {
+                MatrixSettingsActivity.DEFAULT_BRIGHT_COLOR.toColorInt() }
+            val darkColor = try {
+                darkColorHex.toColorInt() } catch (e: IllegalArgumentException) {
+                MatrixSettingsActivity.DEFAULT_DARK_COLOR.toColorInt() }
 
             renderer.setCharacters(chars)
             renderer.initialize(width, height, fadeSpeed, textSize, brightColor, darkColor)

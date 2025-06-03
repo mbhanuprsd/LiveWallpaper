@@ -26,4 +26,6 @@
     <!-- Strings for Color Picker Dialog -->
     <string name="hex_color_input_label">Enter Hex Color Code:</string>
     <string name="hex_color_input_hint">e.g., #00FF00</string>
+    <string name="color_picker">#RRGGBB</string>
+    <string name="invalid">Invalid</string>
 </resources>
