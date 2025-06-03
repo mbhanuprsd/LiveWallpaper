@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">LiveWallpaper</string>
+    <string name="select_a_wallpaper">Select a Wallpaper</string>
+    <string name="wallpaper_thumbnail">Wallpaper thumbnail</string>
+    <string name="settings">Settings</string>
+
+    <string name="wallpaper_name">Matrix Rain Live Wallpaper</string>
+    <string name="wallpaper_description">A live wallpaper featuring the classic Matrix rain effect with customizable characters.</string>
+
+    <!-- Strings for SettingsActivity -->
+    <string name="settings_title">Matrix Rain Settings</string>
+    <string name="character_input_label">Enter characters for the rain:</string>
+    <string name="character_input_hint">e.g., 0123456789ABCDEF</string>
+    <string name="save_button_text">Save Settings</string>
+
+    <string name="fade_speed_label">Fade Speed (higher = longer trails):</string>
+    <string name="fade_speed_hint">e.g., 8</string>
+
+    <string name="text_size_label">Character Size (smaller = denser):</string>
+    <string name="text_size_hint">e.g., 30</string>
+
+    <string name="bright_color_label">Bright Color:</string>
+    <string name="dark_color_label">Dark Color:</string>
+    <string name="select_color_button_text">Select Color</string>
+
+    <!-- Strings for Color Picker Dialog -->
+    <string name="hex_color_input_label">Enter Hex Color Code:</string>
+    <string name="hex_color_input_hint">e.g., #00FF00</string>
+</resources>

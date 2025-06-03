@@ -1,0 +1,54 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="100dp"
+    android:height="100dp"
+    android:viewportWidth="100"
+    android:viewportHeight="100">
+
+    <!-- Black background -->
+    <path
+        android:fillColor="#000000"
+        android:pathData="M0,0h100v100h-100z" />
+
+    <!-- Column 1 -->
+    <group android:translateX="10">
+        <path android:fillColor="#00FF00" android:pathData="M0,0h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,10h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,20h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,30h4v6h-4z" />
+    </group>
+
+    <!-- Column 2 -->
+    <group android:translateX="25">
+        <path android:fillColor="#00FF00" android:pathData="M0,5h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,15h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,25h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,35h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,45h4v6h-4z" />
+    </group>
+
+    <!-- Column 3 -->
+    <group android:translateX="40">
+        <path android:fillColor="#00FF00" android:pathData="M0,0h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,8h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,16h4v6h-4z" />
+    </group>
+
+    <!-- Column 4 -->
+    <group android:translateX="55">
+        <path android:fillColor="#00FF00" android:pathData="M0,10h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,20h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,30h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,40h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,50h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,60h4v6h-4z" />
+    </group>
+
+    <!-- Column 5 -->
+    <group android:translateX="70">
+        <path android:fillColor="#00FF00" android:pathData="M0,5h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,15h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,25h4v6h-4z" />
+        <path android:fillColor="#00FF00" android:pathData="M0,35h4v6h-4z" />
+    </group>
+
+</vector>
