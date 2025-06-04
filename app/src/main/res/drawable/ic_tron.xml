@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background: Solid Black -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FF000000" />
+        </shape>
+    </item>
+
+    <!-- Base Grid Lines (Subtle, dark background grid) -->
+    <item>
+        <shape android:shape="rectangle">
+            <stroke
+                android:width="1dp"
+                android:color="#1A00FFFF" /> <!-- Very faint cyan grid -->
+            <size
+                android:width="100dp"
+                android:height="100dp" />
+        </shape>
+    </item>
+
+    <!-- Glowing Blue Line 1 (Main Diagonal) -->
+    <item>
+        <rotate
+            android:fromDegrees="45"
+            android:pivotX="50%"
+            android:pivotY="50%">
+            <shape android:shape="rectangle">
+                <size
+                    android:width="10dp"
+                    android:height="150dp" />
+                <solid android:color="#6600FFFF" /> <!-- Brighter outer glow -->
+                <corners android:radius="5dp" />
+            </shape>
+        </rotate>
+    </item>
+    <item>
+        <rotate
+            android:fromDegrees="45"
+            android:pivotX="50%"
+            android:pivotY="50%">
+            <shape android:shape="rectangle">
+                <size
+                    android:width="6dp"
+                    android:height="130dp" />
+                <solid android:color="#CC00FFFF" /> <!-- Stronger inner glow -->
+                <corners android:radius="3dp" />
+            </shape>
+        </rotate>
+    </item>
+    <item>
+        <rotate
+            android:fromDegrees="45"
+            android:pivotX="50%"
+            android:pivotY="50%">
+            <shape android:shape="rectangle">
+                <size
+                    android:width="4dp"
+                    android:height="110dp" />
+                <solid android:color="#00FFFF" /> <!-- Solid core -->
+                <corners android:radius="2dp" />
+            </shape>
+        </rotate>
+    </item>
+
+    <!-- Glowing Blue Line 2 (Horizontal, top) -->
+    <item android:top="20dp" android:left="0dp">
+        <shape android:shape="rectangle">
+            <size
+                android:width="120dp"
+                android:height="6dp" />
+            <solid android:color="#6600FFFF" />
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+    <item android:top="20dp" android:left="0dp">
+        <shape android:shape="rectangle">
+            <size
+                android:width="100dp"
+                android:height="4dp" />
+            <solid android:color="#00FFFF" />
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+
+    <!-- Glowing Orange Line (Vertical, right side) -->
+    <item android:left="80dp" android:top="0dp">
+        <shape android:shape="rectangle">
+            <size
+                android:width="6dp"
+                android:height="120dp" />
+            <solid android:color="#66FFA500" /> <!-- Brighter orange glow -->
+            <corners android:radius="3dp" />
+        </shape>
+    </item>
+    <item android:left="80dp" android:top="0dp">
+        <shape android:shape="rectangle">
+            <size
+                android:width="4dp"
+                android:height="100dp" />
+            <solid android:color="#FFA500" /> <!-- Solid orange core -->
+            <corners android:radius="2dp" />
+        </shape>
+    </item>
+
+    <!-- Additional Blue Lines for density -->
+    <item android:top="50dp" android:left="10dp">
+        <shape android:shape="rectangle">
+            <size
+                android:width="90dp"
+                android:height="3dp" />
+            <solid android:color="#9900FFFF" />
+            <corners android:radius="1.5dp" />
+        </shape>
+    </item>
+    <item android:top="70dp" android:left="30dp">
+        <shape android:shape="rectangle">
+            <size
+                android:width="70dp"
+                android:height="3dp" />
+            <solid android:color="#9900FFFF" />
+            <corners android:radius="1.5dp" />
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="40dp">
+        <shape android:shape="rectangle">
+            <size
+                android:width="3dp"
+                android:height="80dp" />
+            <solid android:color="#9900FFFF" />
+            <corners android:radius="1.5dp" />
+        </shape>
+    </item>
+    <item android:top="0dp" android:left="10dp">
+        <shape android:shape="rectangle">
+            <size
+                android:width="3dp"
+                android:height="50dp" />
+            <solid android:color="#9900FFFF" />
+            <corners android:radius="1.5dp" />
+        </shape>
+    </item>
+</layer-list>

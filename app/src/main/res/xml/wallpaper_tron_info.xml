@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wallpaper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:thumbnail="@drawable/ic_tron"
+    android:description="@string/tron_wallpaper_description"
+    android:settingsActivity="com.acalmindian.livewallpaper.tron.TronSettingsActivity" />

@@ -43,6 +43,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Tron Live Wallpaper Service -->
+        <service
+            android:name=".tron.TronWallpaperService"
+            android:label="@string/tron_wallpaper_name"
+            android:permission="android.permission.BIND_WALLPAPER"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/wallpaper_tron_info" /> <!-- Points to the new Tron info file -->
+        </service>
+
+        <!-- Tron Settings Activity -->
+        <activity
+            android:name=".tron.TronSettingsActivity"
+            android:label="@string/tron_settings_title"
+            android:exported="true" />
     </application>
 
 </manifest>

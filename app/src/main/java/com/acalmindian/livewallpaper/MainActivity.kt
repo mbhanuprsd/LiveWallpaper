@@ -8,6 +8,8 @@ import android.widget.GridView
 import androidx.appcompat.app.AppCompatActivity
 import com.acalmindian.livewallpaper.matrix.MatrixSettingsActivity
 import com.acalmindian.livewallpaper.matrix.MatrixWallpaperService
+import com.acalmindian.livewallpaper.tron.TronSettingsActivity
+import com.acalmindian.livewallpaper.tron.TronWallpaperService
 
 class MainActivity : AppCompatActivity() {
 
@@ -23,6 +25,12 @@ class MainActivity : AppCompatActivity() {
                 thumbnailResId = R.drawable.ic_matrix,
                 serviceComponent = ComponentName(this, MatrixWallpaperService::class.java),
                 settingsActivityClass = MatrixSettingsActivity::class.java
+            ),
+            WallpaperOption(
+                name = "Tron",
+                thumbnailResId = R.drawable.ic_tron,
+                serviceComponent = ComponentName(this, TronWallpaperService::class.java),
+                settingsActivityClass = TronSettingsActivity::class.java
             )
         )
 

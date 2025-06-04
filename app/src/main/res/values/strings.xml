@@ -28,4 +28,23 @@
     <string name="hex_color_input_hint">e.g., #00FF00</string>
     <string name="color_picker">#RRGGBB</string>
     <string name="invalid">Invalid</string>
+
+    <!-- NEW TRON WALLPAPER STRINGS -->
+    <string name="tron_wallpaper_name">Tron Live Wallpaper</string>
+    <string name="tron_wallpaper_description">A live wallpaper featuring dynamic glowing lines inspired by Tron.</string>
+    <string name="tron_settings_title">Tron Wallpaper Settings</string>
+    <string name="tron_save_button_text">Save Tron Settings</string>
+
+    <string name="tron_line_color_label">Line Color:</string>
+    <string name="tron_glow_radius_label">Glow Radius:</string>
+    <string name="tron_line_speed_label">Line Speed:</string>
+    <string name="tron_max_lines_label">Max Lines:</string>
+
+    <string name="tron_select_color_button_text">Select Tron Color</string>
+    <string name="tron_hex_color_input_label">Enter Tron Hex Color Code:</string>
+    <string name="tron_hex_color_input_hint">e.g., #00FFFF</string>
+
+    <string name="tron_glow_radius_hint">e.g., 10 (0 for no glow)</string>
+    <string name="tron_line_speed_hint">e.g., 10 (higher = faster)</string>
+    <string name="tron_max_lines_hint">e.g., 5 (number of concurrent lines)</string>
 </resources>
